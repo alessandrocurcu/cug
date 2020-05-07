@@ -3,15 +3,22 @@
     <div>
       <ul>
         <li v-for="(authorName, i) in book.authorsName" :key="i">
-          {{ authorName }}
+          di {{ authorName }}
         </li>
       </ul>
     </div>
     <p>{{ book.title }}</p>
-    <p>{{ book.subTitle }}</p>
-    <p>{{ book.img }}</p>
+    <img src="@/assets/img/alice.jpg" />
     <p>{{ book.publishedAt }}</p>
+    <p>{{ book.paperFormat }}</p>
+    <p>{{ book.pages }}</p>
+    <p>{{ book.ISBN }}</p>
+    <p>{{ book.subTitle }}</p>
     <p>{{ book.shortDescription }}</p>
+    <p>{{ book.pricePaper }} €</p>
+    <button>Acquista il libro cartaceo</button>
+    <p>{{ book.priceEbook }} €</p>
+    <button>Acquista l'ebook</button>
   </article>
 </template>
 
@@ -22,6 +29,11 @@ export default {
     book: {
       type: Object,
       default: () => {},
+    },
+  },
+  computed: {
+    bookUrl() {
+      return this.$route.path
     },
   },
 }
