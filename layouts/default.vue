@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav
+    <!-- <nav
       class="navbar header has-shadow is-primary"
       role="navigation"
       aria-label="main navigation"
@@ -16,7 +16,7 @@
           <span />
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <section class="section">
       <div class="container">
@@ -27,22 +27,5 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' },
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' },
-        },
-      ],
-    }
-  },
-}
+export default {}
 </script>
