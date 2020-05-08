@@ -2,6 +2,7 @@
   <div>
     <section class="section">
       <div class="container">
+        <a href="#" class="is-pulled-right">Vedi carrello</a>
         <nuxt />
       </div>
     </section>
