@@ -8,7 +8,10 @@
       </ul>
     </div>
     <p>{{ book.title }}</p>
-    <img src="@/assets/img/alice.jpg" />
+    <img
+      :src="require(`../assets/img/${book.img.toLowerCase()}`)"
+      :alt="book.imgAlt"
+    />
     <p>{{ book.publishedAt }}</p>
     <p>{{ book.paperFormat }}</p>
     <p>{{ book.pages }}</p>
@@ -16,7 +19,18 @@
     <p>{{ book.subTitle }}</p>
     <p>{{ book.shortDescription }}</p>
     <p>{{ book.pricePaper }} €</p>
-    <button>Acquista il libro cartaceo</button>
+    <button
+      class="snipcart-add-item"
+      :data-item-id="book.id"
+      :data-item-price="book.pricePaper"
+      :data-item-url="bookUrl"
+      :data-item-image="require(`../assets/img/${book.img.toLowerCase()}`)"
+      :data-item-description="book.subTitle"
+      :data-item-name="book.title"
+      data-item-has-taxes-included="true"
+    >
+      Acquista il libro cartaceo
+    </button>
     <p>{{ book.priceEbook }} €</p>
     <button>Acquista l'ebook</button>
   </article>
