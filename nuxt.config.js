@@ -45,23 +45,23 @@ export default {
     [
       'nuxt-buefy',
       {
-        css: false,
+        css: true,
         materialDesignIcons: false,
-        defaultIconPack: 'fas',
-        defaultIconComponent: 'font-awesome-icon',
+        // defaultIconPack: 'fas',
+        // defaultIconComponent: 'font-awesome-icon',
       },
     ],
-    [
-      'nuxt-fontawesome',
-      {
-        imports: [
-          {
-            set: '@fortawesome/free-solid-svg-icons',
-            icons: ['fas'],
-          },
-        ],
-      },
-    ],
+    // [
+    //   'nuxt-fontawesome',
+    //   {
+    //     imports: [
+    //       {
+    //         set: '@fortawesome/free-solid-svg-icons',
+    //         icons: ['fas'],
+    //       },
+    //     ],
+    //   },
+    // ],
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
