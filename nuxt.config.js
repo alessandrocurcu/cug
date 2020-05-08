@@ -45,7 +45,7 @@ export default {
     [
       'nuxt-buefy',
       {
-        css: true,
+        css: false,
         materialDesignIcons: false,
         // defaultIconPack: 'fas',
         // defaultIconComponent: 'font-awesome-icon',
@@ -67,6 +67,7 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
+    'nuxt-purgecss',
   ],
   styleResources: {
     scss: ['@assets/scss/variables.scss', '@assets/scss/mixins.scss'],
