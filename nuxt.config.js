@@ -47,26 +47,27 @@ export default {
       {
         css: false,
         materialDesignIcons: false,
-        defaultIconPack: 'fas',
-        defaultIconComponent: 'font-awesome-icon',
+        // defaultIconPack: 'fas',
+        // defaultIconComponent: 'font-awesome-icon',
       },
     ],
-    [
-      'nuxt-fontawesome',
-      {
-        imports: [
-          {
-            set: '@fortawesome/free-solid-svg-icons',
-            icons: ['fas'],
-          },
-        ],
-      },
-    ],
+    // [
+    //   'nuxt-fontawesome',
+    //   {
+    //     imports: [
+    //       {
+    //         set: '@fortawesome/free-solid-svg-icons',
+    //         icons: ['fas'],
+    //       },
+    //     ],
+    //   },
+    // ],
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
+    'nuxt-purgecss',
   ],
   styleResources: {
     scss: ['@assets/scss/variables.scss', '@assets/scss/mixins.scss'],
