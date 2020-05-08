@@ -2,7 +2,12 @@
   <div>
     <section class="section">
       <div class="container">
-        <a href="#" class="is-pulled-right">Vedi carrello</a>
+        <div style="text-align: right;">
+          <a href="#" class="snipcart-checkout">Vedi carrello</a>
+          • Nel carrello ci sono
+          <span class="snipcart-items-count"></span> libri per un totale di
+          <span class="snipcart-total-price"></span>
+        </div>
         <nuxt />
       </div>
     </section>
