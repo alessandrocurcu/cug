@@ -1,7 +1,6 @@
 <template>
   <div>
     <section class="section">
-      <h1>{{ snip }}</h1>
       <div class="container">
         <div style="text-align: right;">
           <a href="#" class="snipcart-checkout">Vedi carrello</a>
